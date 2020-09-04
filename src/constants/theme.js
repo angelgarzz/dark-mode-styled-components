@@ -5,19 +5,15 @@ export const COLORS = {
     },
     background2: {
         light: '#dfebf6', // White
-        dark: '#1f1f30', // Black
+        dark: '#2d2d4e', // Dark purple
     },
     text: {
         light: '#222', // Near black
         dark: '#fff', // White
     },
     title: {
-        light: '#333',
-        dark: '#f2f5f7',
-    },
-    primary: {
-        light: '#0077ff', // Blue
-        dark: '#0077ff', // Blue
+        light: '#0077ff',
+        dark: '#e22866',
     },
     soft: {
         light: '#eee', // Blue

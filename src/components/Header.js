@@ -2,16 +2,19 @@ import React from "react"
 import styled from "styled-components"
 // Components
 import ThemeToggle from "./ThemeToggle"
+import Title from "./Title"
 
 const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-soft);
 `
 
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
-    {siteTitle}
+    <Title>{siteTitle}</Title>
     <ThemeToggle />
   </HeaderWrapper>
 )
