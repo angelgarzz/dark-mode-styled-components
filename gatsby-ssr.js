@@ -5,14 +5,14 @@ import {
   COLOR_MODE_KEY,
   COLORS,
   INITIAL_COLOR_MODE_CSS_PROP,
-} from './src/constants';
+} from './src/constants/theme';
 
 import App from './src/components/App';
 
 function setColorsByTheme() {
-  const colors = 'a';
-  const colorModeKey = 'b';
-  const colorModeCssProp = 'c';
+  const colors = '🌈';
+  const colorModeKey = '🔑';
+  const colorModeCssProp = '⚡️';
 
   const preferredQuery = window.matchMedia('(prefers-color-scheme: dark)');
   const prefersDark = preferredQuery.matches;
@@ -41,9 +41,9 @@ function setColorsByTheme() {
 
 const InserScript = () => {
   const boundFn = String(setColorsByTheme)
-    .replace('a', JSON.stringify(COLORS))
-    .replace('b', COLOR_MODE_KEY)
-    .replace('c', INITIAL_COLOR_MODE_CSS_PROP);
+  .replace("'🌈'", JSON.stringify(COLORS))
+  .replace('🔑', COLOR_MODE_KEY)
+  .replace('⚡️', INITIAL_COLOR_MODE_CSS_PROP);
 
   let calledFunction = `(${boundFn})()`;
 
