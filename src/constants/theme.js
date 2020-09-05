@@ -12,8 +12,8 @@ export const COLORS = {
         dark: '#fff', // White
     },
     title: {
-        light: '#0077ff',
-        dark: '#e22866',
+        light: '#0077ff', // Near black
+        dark: '#e22866', // Pink
     },
     soft: {
         light: '#eee', // Blue
